@@ -1,0 +1,67 @@
+.card {
+  background-color: #1f2937; /* dark slate-gray */
+  padding: 16px 24px;
+  margin: 12px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #d1d5db; /* light gray text */
+  user-select: none;
+}
+
+.input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #4b5563; /* medium gray border */
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #111827; /* almost black bg */
+  color: #e5e7eb; /* light gray text */
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.input::placeholder {
+  color: #6b7280; /* muted placeholder */
+}
+
+.input:focus {
+  border-color: #818cf8; /* muted indigo-ish */
+  outline: none;
+  background-color: #1e293b; /* slightly lighter dark */
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #374151; /* dark gray */
+  color: #e0e0e0;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
+  box-shadow: 0 4px 8px rgba(55, 65, 81, 0.5);
+}
+
+.button:hover {
+  background-color: #4b5563; /* lighter gray */
+  box-shadow: 0 6px 12px rgba(75, 85, 99, 0.7);
+}
+
+.button:active {
+  background-color: #27272a; /* darkest gray */
+  box-shadow: none;
+  transform: scale(0.97);
+}
+
+.button:disabled {
+  background-color: #1f2937;
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: none;
+}

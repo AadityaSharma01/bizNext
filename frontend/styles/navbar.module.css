@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #0f172a 0%, #1e293b 100%); /* dark navy to graphite */
+  padding: 0 16px;
+  border-bottom: 1px solid #374151; /* subtle dark border */
+  height: 40px; /* more comfy height */
+  min-width: 430px;
+  border-radius: 8px;
+  user-select: none;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 16px;
+  border-radius: 12px;
+  filter: brightness(0.9);
+  transition: filter 0.2s ease;
+}
+
+.logo:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.welcome {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e0e7ff; /* soft indigo */
+  margin-left: 12px;
+  user-select: text;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #cbd5e1; /* light slate gray */
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  user-select: none;
+}
+
+.link:hover {
+  background-color: #374151; /* slightly lighter graphite */
+  color: #818cf8; /* indigo-400 */
+  cursor: pointer;
+}
